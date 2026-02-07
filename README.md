@@ -1,5 +1,6 @@
 ### 总体关系（从“输入”到“页面”）
 
+
 - **内容文件**：`_pages/*.md`、`_posts/*.md`、`_news/*.md`、`_projects/*.md`、`_bibliography/papers.bib`、`_data/*.yml`  
   ↓（根据 front matter 中的 `layout`、`permalink` 等）
 - **布局文件**：`_layouts/*.liquid`（如 `default.liquid`、`about.liquid`、`page.liquid`、`post.liquid`、`cv.liquid`、`bib.liquid`）  
