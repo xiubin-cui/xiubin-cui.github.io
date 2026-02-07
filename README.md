@@ -89,17 +89,13 @@
 - **`_news/*.md`**
   - front matter 多为 `layout: post`, `inline: true` 等。
   - **布局**：`_layouts/post.liquid`
-  - **被引用**：
-    - 在 `news.liquid` 中通过 `site.news` 列出；
-    - 在 about 页通过 `announcements` 区块（若 `about.md` 开启）。
-
+  - **被引用**： 在 `news.liquid` 中通过 `site.news` 列出；在 about 页通过 `announcements` 区块（若 `about.md` 开启）。
 - **`_posts/*.md`**
   - 示例博客文章，布局也是 `post.liquid`。
   - **被引用**：
     - `latest_posts.liquid`（若在首页或别的页面 include）；
     - `related_posts.liquid`（文章页底部的“相关文章”）；
     - 归档页（`archive.liquid` 和 jekyll-archives 插件）会按年/标签/分类列出这些 post。
-
 - **`_projects/*.md`**
   - front matter：`layout: page`，`category`、`img`、`importance` 等。
   - **被引用**：
@@ -117,16 +113,10 @@
     - 简历页下载按钮如果没有在 `cv.md` 中专门设置，也会回落到这里的 `cv_pdf`。
 - **`_data/venues.yml`**
   - 映射期刊/会议缩写到 URL + 颜色（如 `"AJP"`, `"PhysRev"` 等）。
-  - **被引用**：
-    - `_layouts/bib.liquid` 中：
-      - 通过 `site.data.venues[entry.abbr]` 查找当前文献的 venue；
-      - 决定按钮颜色、链接到期刊官网。
+  - **被引用**：`_layouts/bib.liquid` 中：通过 `site.data.venues[entry.abbr]` 查找当前文献的 venue；决定按钮颜色、链接到期刊官网。
 - **`_data/coauthors.yml`**
   - 为每个合作者（按姓的 key）提供 `firstname` 和 `url`。
-  - **被引用**：
-    - `_layouts/bib.liquid` 中：
-      - 通过 `site.data.coauthors[clean_last_name]` 查找作者是否在 coauthors 表里；
-      - 若有，给该作者名字加上超链接。
+  - **被引用**：`_layouts/bib.liquid` 中：通过 `site.data.coauthors[clean_last_name]` 查找作者是否在 coauthors 表里；若有，给该作者名字加上超链接。
 - **`_data/repositories.yml`**
   - 包含 `github_users` 和 `github_repos`。
   - **被引用**：
@@ -205,9 +195,7 @@
 
 ---
 
-
-
 ```shell
 docker compose pull
-docker compose up 
+docker compose up
 ```
