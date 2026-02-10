@@ -6,6 +6,3 @@ related_posts: false
 ---
 
 I’ll be starting my M.S. this fall at XXX! ✨
-
-
-

@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: profile.jpg
+  image: profile-1.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
 
@@ -19,9 +19,9 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 ---
 
-I am a 0-year Master candidate in Computer Science at XXX. I am grateful to be advised by XXX.
+I am a XXX-year Master candidate in Computer Science at XXX. I am grateful to be advised by XXX.
 
-I am broadly interested in Natural Language Processing and Machine Learning. My long-term goal is to build **robust, controllable, accountable, and responsible large language models**. My recent work focuses on enhancing safety alignment of LLMs and VLMs.
+I am broadly interested in XXX and XXX. My long-term goal is to XXX. My recent work focuses on XXX.
 
 ### Education
 
